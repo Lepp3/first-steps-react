@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header title="Hello from props" subheading="something else"/>
       <Main/>
       <Footer/>
     </>

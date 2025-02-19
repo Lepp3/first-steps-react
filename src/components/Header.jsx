@@ -1,7 +1,7 @@
-function Header(){
+function Header(props){
 
     return(
-       <header><h1>Hello React Header!</h1></header> 
+       <header><h1>{props.title} {props.subheading}</h1></header> 
     )
 
 }
