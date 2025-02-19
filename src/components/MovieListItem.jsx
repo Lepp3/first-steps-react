@@ -1,5 +1,6 @@
 export default function MovieListItem(props){
     return(
+        <>
         <article>
             <header>
                 <h4>{props.movie.title}</h4>
@@ -12,5 +13,7 @@ export default function MovieListItem(props){
             </footer>
             
         </article>
+        <hr></hr>
+        </>
     )
 }

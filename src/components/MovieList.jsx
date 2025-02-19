@@ -6,10 +6,11 @@ export default function MovieList(props){
         <>
         <h3>Movie List</h3>
         <div>
-            {props.movies.map(movie=>(
-                <MovieListItem movie={movie}/>
+            {props.movies.map((movie, index)=>(
+                <MovieListItem key={movie.id || index} movie={movie}/>
             ))}
-            {/* <MovieListItem movie={props.movies[0]}/> */}
+            
+            
         </div>
         </>
     );
