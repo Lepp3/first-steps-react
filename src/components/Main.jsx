@@ -1,4 +1,5 @@
 import MovieList from "./MovieList";
+import BasicTimer from "./BasicTimer"
 
 const movies = [{
     "id": 1,
@@ -76,7 +77,10 @@ const movies = [{
 
 function Main(){
     return(
-        <main><MovieList movies={movies}/></main>
+        <main>
+          <MovieList movies={movies}/>
+          <BasicTimer/>
+        </main>
     )
 }
 
