@@ -1,6 +1,7 @@
 import MovieList from "./MovieList";
 import BasicTimer from "./BasicTimer"
 import Counter from "./Counter";
+import KillCounter from "./KillCounter";
 
 const movies = [{
     "id": 1,
@@ -82,6 +83,7 @@ function Main(){
           <MovieList movies={movies}/>
           <BasicTimer/>
           <Counter/>
+          <KillCounter/>
         </main>
     )
 }
