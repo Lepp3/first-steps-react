@@ -3,6 +3,7 @@ import BasicTimer from "./BasicTimer"
 import Counter from "./Counter";
 import KillCounter from "./KillCounter";
 import InputTracker from "./InputTracker";
+import { useState } from "react";
 
 const movies = [{
     "id": 1,
@@ -79,13 +80,21 @@ const movies = [{
 
 
 function Main(){
+    const [show,setShowState] = useState(false);
+
+    const showInputHandler = () =>{
+      setShowState(state => !state);
+    }
+
     return(
         <main>
           <MovieList movies={movies}/>
           {/* <BasicTimer/> */}
           <Counter/>
           <KillCounter/>
-          <InputTracker/>
+          <button onClick={showInputHandler}>{show ? 'Hide' : 'Show'} Input</button>
+          {show && <InputTracker/>}
+          
         </main>
     )
 }

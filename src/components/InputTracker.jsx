@@ -5,9 +5,9 @@ export default function InputTracker(){
     const [inputValue, setInputValue] = useState('');
     const [state,setState] = useState(false);
 
-    // useEffect (()=>{
-    //     console.log('Current Input:', inputValue);
-    // }, [inputValue]);
+    useEffect (()=>{
+        console.log('Current Input:', inputValue);
+    }, [inputValue]);
 
     useEffect(()=>{
         console.log('Mounting');
@@ -20,7 +20,7 @@ export default function InputTracker(){
     }
 
     const inputChangeHandler = (e) =>{
-        console.log(e.target.value);
+        setInputValue(e.target.value);
     }
 
     return(
