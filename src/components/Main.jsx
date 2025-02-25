@@ -82,7 +82,7 @@ function Main(){
     return(
         <main>
           <MovieList movies={movies}/>
-          <BasicTimer/>
+          {/* <BasicTimer/> */}
           <Counter/>
           <KillCounter/>
           <InputTracker/>
