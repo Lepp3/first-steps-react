@@ -89,7 +89,7 @@ function Main(){
     return(
         <main>
           <MovieList movies={movies}/>
-          {/* <BasicTimer/> */}
+          <BasicTimer/>
           <Counter/>
           <KillCounter/>
           <button onClick={showInputHandler}>{show ? 'Hide' : 'Show'} Input</button>
