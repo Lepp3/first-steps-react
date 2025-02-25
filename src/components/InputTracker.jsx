@@ -10,6 +10,12 @@ export default function InputTracker(){
     }, [inputValue]);
 
     useEffect(()=>{
+        return () =>{
+            console.log('Unmounted')
+        }
+    },[])
+
+    useEffect(()=>{
         console.log('Mounting');
     },[state])
 
