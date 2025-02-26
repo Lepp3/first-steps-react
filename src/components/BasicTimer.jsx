@@ -13,14 +13,16 @@ export default function Timer(){
         if(!isManual){
             setTimeout(() => {
                 setTime(seconds => seconds + 1);
+                setManual(false);
             }, 1000); 
-            setManual(false);
+            
         }
     },[time,isManual])
 
 
     const addTimeHandler = () => {
         setTime(seconds => seconds + 10);
+        setManual(true);
         
     }
 
