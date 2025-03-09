@@ -5,6 +5,7 @@ import KillCounter from "./KillCounter";
 import InputTracker from "./InputTracker";
 import { useState } from "react";
 import ControlledForm from "./ControlledForm";
+import UnifiedControlledForm from "./UnifiedControlledForm";
 
 const movies = [{
     "id": 1,
@@ -93,6 +94,7 @@ function Main(){
           {/* <BasicTimer/>
           <Counter/> */}
           <ControlledForm/>
+          <UnifiedControlledForm/>
           <KillCounter/>
           <button onClick={showInputHandler}>{show ? 'Hide' : 'Show'} Input</button>
           {show && <InputTracker/>}

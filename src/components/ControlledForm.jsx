@@ -35,10 +35,10 @@ export default function ControlledForm(){
     return(
         <form onSubmit={submitHandler}>
             <div>
-            <label htmlFor="username" >Username</label>
+            <label htmlFor="usernameOne" >Username</label>
             <input type="text" 
-            id="username"
-            name="username" 
+            id="usernameOne"
+            name="usernameOne" 
             onChange={usernameChangeHandler}></input>
             </div>
             <input
