@@ -4,6 +4,7 @@ import Counter from "./Counter";
 import KillCounter from "./KillCounter";
 import InputTracker from "./InputTracker";
 import { useState } from "react";
+import ControlledForm from "./ControlledForm";
 
 const movies = [{
     "id": 1,
@@ -89,8 +90,9 @@ function Main(){
     return(
         <main>
           <MovieList movies={movies}/>
-          <BasicTimer/>
-          <Counter/>
+          {/* <BasicTimer/>
+          <Counter/> */}
+          <ControlledForm/>
           <KillCounter/>
           <button onClick={showInputHandler}>{show ? 'Hide' : 'Show'} Input</button>
           {show && <InputTracker/>}
